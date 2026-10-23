@@ -2,6 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://cdn.jsdelivr.net; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="color-scheme" content="light dark">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 </head>
@@ -450,17 +452,7 @@ html:not(.en) .logo .nm span[lang="ja"],html.en .logo .nm span[lang="en"]{displa
 
 <footer><div class="wrap ft"><span>© 2026 Plushigh Inc.</span><span><svg class="jp-flag" viewBox="0 0 30 20" role="img" aria-label="日本国旗"><rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="6" fill="#bc002d"/><rect x=".5" y=".5" width="29" height="19" fill="none" stroke="#c9ccc4"/></svg>+81 Tokyo · <svg class="jp-flag et-flag" viewBox="0 0 30 20" role="img" aria-label="エチオピア国旗"><rect width="30" height="6.67" fill="#078930"/><rect y="6.67" width="30" height="6.67" fill="#fcdd09"/><rect y="13.33" width="30" height="6.67" fill="#da121a"/><circle cx="15" cy="10" r="4.4" fill="#0f47af"/><path d="M15.00 6.70 L16.94 12.67 L11.86 8.98 L18.14 8.98 L13.06 12.67 Z" fill="none" stroke="#fcdd09" stroke-width=".55" stroke-linejoin="round"/><line x1="15.87" y1="8.80" x2="17.04" y2="7.20" stroke="#fcdd09" stroke-width=".45"/><line x1="16.41" y1="10.46" x2="18.30" y2="11.07" stroke="#fcdd09" stroke-width=".45"/><line x1="15.00" y1="11.48" x2="15.00" y2="13.46" stroke="#fcdd09" stroke-width=".45"/><line x1="13.59" y1="10.46" x2="11.70" y2="11.07" stroke="#fcdd09" stroke-width=".45"/><line x1="14.13" y1="8.80" x2="12.96" y2="7.20" stroke="#fcdd09" stroke-width=".45"/><rect x=".5" y=".5" width="29" height="19" fill="none" stroke="#c9ccc4"/></svg>+251 Addis Ababa</span></div></footer>
 
-<script>
-(function(){
-  const r=document.documentElement,lj=document.getElementById("lj"),le=document.getElementById("le");
-  function set(l){r.classList.toggle("en",l==="en");r.lang=l==="en"?"en":"ja";lj.setAttribute("aria-pressed",l!=="en");le.setAttribute("aria-pressed",l==="en");try{localStorage.setItem("ph-lang",l)}catch(_){}}
-  let s="ja";try{s=localStorage.getItem("ph-lang")||"ja"}catch(_){}
-  set(s);lj.onclick=()=>set("ja");le.onclick=()=>set("en");
-  const cp=document.getElementById("cp");
-  cp.onclick=()=>{const t=document.getElementById("mail").textContent;
-    navigator.clipboard?.writeText(t).then(()=>{cp.textContent="Copied"},()=>{const g=document.createRange();g.selectNodeContents(document.getElementById("mail"));const sl=getSelection();sl.removeAllRanges();sl.addRange(g)});};
-})();
-</script>
+<script src="assets/lang-toggle.js"></script>
 
 
 </body>

@@ -2,6 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://cdn.jsdelivr.net; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="color-scheme" content="light dark">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ビジネスマッチング | 株式会社プラスハイ</title>
@@ -145,7 +147,7 @@
   <section class="block" id="apply" aria-labelledby="h-apply" hidden>
     <div class="wrap narrow">
       <div class="block-head"><h2 id="h-apply">参加申込</h2><span class="en">Application</span></div>
-      <form class="form m-form" id="m-form" novalidate>
+      <form method="post" class="form m-form" id="m-form" novalidate>
         <fieldset class="m-side">
           <legend>ご希望</legend>
           <label><input type="radio" name="side" value="buy" required> 買いたい</label>
@@ -188,7 +190,7 @@
     <div class="wrap narrow">
       <div class="block-head"><h2 id="h-request">その他の品目をリクエスト</h2><span class="en">Request</span></div>
       <p class="t-cats-lead">取り扱ってほしい品目をお知らせください。ご要望の多い品目から、調査・取り扱いの準備を進めます。</p>
-      <form class="form m-form" data-endpoint="/api/requests" novalidate>
+      <form method="post" class="form m-form" data-endpoint="/api/requests" novalidate>
         <div class="m-grid">
           <label>希望する品目 <em>必須</em><input class="input" name="item" maxlength="120" required placeholder="例：皮革製品、花き、医療機器 など"></label>
           <label>方向<select class="input" name="direction"><option value="either">どちらでも</option><option value="export">エチオピアから輸出</option><option value="import">エチオピアへ輸入</option></select></label>
@@ -279,7 +281,7 @@
   <section class="block" id="talent-inquiry" aria-labelledby="h-talent-inquiry">
     <div class="wrap narrow">
       <div class="block-head"><h2 id="h-talent-inquiry">受け入れ相談</h2><span class="en">For employers</span></div>
-      <form class="form m-form" data-endpoint="/api/talent" novalidate>
+      <form method="post" class="form m-form" data-endpoint="/api/talent" novalidate>
         <div class="m-grid">
           <label>会社名 <em>必須</em><input class="input" name="company" maxlength="120" required autocomplete="organization"></label>
           <label>業種 <em>必須</em><input class="input" name="industry" maxlength="80" required placeholder="例：製造業、介護、外食、建設 など"></label>
@@ -328,7 +330,7 @@
   <section class="block" id="consult-inquiry" aria-labelledby="h-consult-inquiry">
     <div class="wrap narrow">
       <div class="block-head"><h2 id="h-consult-inquiry">ご相談</h2><span class="en">Contact</span></div>
-      <form class="form m-form" data-endpoint="/api/consult" novalidate>
+      <form method="post" class="form m-form" data-endpoint="/api/consult" novalidate>
         <label>ご相談の種類 <em>必須</em>
           <select class="input" name="topic" required>
             <option value="research">市場調査</option><option value="attend">現地アテンド・視察</option><option value="partner">パートナー紹介</option>

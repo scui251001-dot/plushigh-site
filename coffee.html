@@ -2,6 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://cdn.jsdelivr.net; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="color-scheme" content="light dark">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mother Tree Coffee（MTC）| 株式会社プラスハイ</title>
@@ -257,7 +259,7 @@
     <div class="wrap">
       <div class="block-head"><h2 id="h-lot">ロット追跡</h2><span class="en">Lot tracking</span></div>
       <p class="c-lot-lead">袋に印字された QR コードを読み取るか、ロット番号を入力すると、そのロットの工程ごとの日付・地域・写真をご覧いただけます。</p>
-      <form class="c-lot-form" id="lot-form">
+      <form method="post" class="c-lot-form" id="lot-form">
         <label class="visually-hidden" for="lot-input">ロット番号</label>
         <input class="input" id="lot-input" name="lot" maxlength="32" autocomplete="off" autocapitalize="characters" placeholder="例：SAMPLE-0001">
         <button class="btn" type="submit">調べる</button>

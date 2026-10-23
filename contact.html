@@ -2,6 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://cdn.jsdelivr.net; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="color-scheme" content="light dark">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>お問い合わせ | 株式会社プラスハイ</title>
@@ -63,7 +65,7 @@
   <section class="block" id="contact-form" aria-labelledby="h-cf">
     <div class="wrap narrow">
       <div class="block-head"><h2 id="h-cf">お問い合わせフォーム</h2><span class="en">Form</span></div>
-      <form class="form m-form" data-endpoint="/api/contact" novalidate>
+      <form method="post" class="form m-form" data-endpoint="/api/contact" novalidate>
         <label>お問い合わせの種類 <em>必須</em>
           <select class="input" name="kind" required>
             <option value="subscription">ビジネス通信の購読</option><option value="matching">ビジネスマッチング</option><option value="talent">人材育成</option>

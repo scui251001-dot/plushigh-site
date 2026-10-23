@@ -2,6 +2,8 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://cdn.jsdelivr.net; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="color-scheme" content="light dark">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ビジネス通信（エチオピア・中東アフリカ）| 株式会社プラスハイ</title>
@@ -71,7 +73,7 @@
       </a>
       <div class="block-head sub"><h2>バックナンバー</h2><span class="en">Archive</span></div>
       <ul class="issue-list" id="archive"></ul>
-      <form class="subscribe home-sub" id="subscribe-form" novalidate>
+      <form method="post" class="subscribe home-sub" id="subscribe-form" novalidate>
         <label for="sub-email"><b>メールで受け取る</b><span>毎週の配信をメールでお届けします（無料・いつでも解除可）。</span></label>
         <div class="subscribe-row">
           <input class="input" id="sub-email" name="email" type="email" maxlength="254" autocomplete="email" placeholder="you@example.co.jp" required>

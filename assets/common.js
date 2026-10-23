@@ -68,5 +68,18 @@
     const lines = Object.entries(obj || {}).filter(([k, v]) => v !== '' && v != null && !['website','consent'].includes(k)).map(([k, v]) => `${LABEL[k] || k}: ${v}`);
     location.href = `mailto:${MAIL_TO}?subject=${encodeURIComponent('[plushigh.co.jp] ' + subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
   }
+
+  // ハニーポット：隠し欄（.hp）に入力があればボットとみなし、送信処理を止める
+  document.addEventListener('submit', (e) => {
+    const hp = e.target.querySelector && e.target.querySelector('.hp input');
+    if (hp && hp.value.trim() !== '') {
+      e.preventDefault(); e.stopImmediatePropagation();
+      try { e.target.reset(); } catch (_) {}
+    }
+  }, true);
+  // 他サイトへの埋め込み（クリックジャッキング）防止：本番ドメインでのみ
+  if (/(^|\.)plushigh\.co\.jp$/.test(location.hostname) && window.top !== window.self) {
+    try { window.top.location = window.self.location.href; } catch (_) { document.documentElement.style.display = 'none'; }
+  }
   window.PH = { store, uuid, browserId, api, el, fmtDate, fmtDateTime, mailto, MAIL_TO };
 })();
