@@ -1,0 +1,1295 @@
+{
+ "updated": "2026-10-21",
+ "note": "数値は各出典の公表値。円換算は表示のレートで計算した参考値。「データ確認中」は出典で未確認の項目。",
+ "groups": [
+  [
+   "politics",
+   "政治"
+  ],
+  [
+   "economy",
+   "経済"
+  ],
+  [
+   "demography",
+   "人口・面積"
+  ],
+  [
+   "fx",
+   "為替（対円）"
+  ],
+  [
+   "power",
+   "電気料金"
+  ],
+  [
+   "wage",
+   "平均賃金"
+  ]
+ ],
+ "countries": {
+  "ET": {
+   "currency": {
+    "name": "エチオピア・ブル",
+    "code": "ETB"
+   },
+   "politics": [
+    {
+     "label": "政体",
+     "value": "連邦共和制",
+     "as_of": "2025-09-29",
+     "source": {
+      "title": "外務省 エチオピア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/ethiopia/data.html"
+     }
+    },
+    {
+     "label": "元首",
+     "value": "タイエ・アツケセラシエ大統領",
+     "as_of": "2026-10-05",
+     "source": {
+      "title": "Dawan Media: Ethiopia’s Abiy sworn in for second term（2026-10-05）",
+      "url": "https://www.dawan.africa/news/ethiopias-abiy-sworn-in-for-second-term-vows-to-protect-national-interests"
+     }
+    },
+    {
+     "label": "首相・政府首脳",
+     "value": "アビィ・アハメド首相（2026年10月 2期目就任、新内閣22閣僚を承認）",
+     "as_of": "2026-10-08",
+     "source": {
+      "title": "allAfrica: Ethiopia’s Parliament Unanimously Approves PM Abiy’s Cabinet Nominees（2026-10-08）",
+      "url": "https://allafrica.com/stories/202610090098.html"
+     }
+    }
+   ],
+   "economy": [
+    {
+     "label": "名目GDP",
+     "value": "1,264億ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP (current US$) NY.GDP.MKTP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+     },
+     "note": "World Bank WDI（2026-10-08 更新）"
+    },
+    {
+     "label": "実質GDP成長率",
+     "value": "+9.8%",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP growth (annual %) NY.GDP.MKTP.KD.ZG",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+     }
+    },
+    {
+     "label": "1人当たりGDP",
+     "value": "933ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP per capita (current US$) NY.GDP.PCAP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD"
+     }
+    },
+    {
+     "label": "主要産業",
+     "value": "農業（穀物・豆類・コーヒー・油糧種子・花卉）、皮革",
+     "as_of": "2025-09-29",
+     "source": {
+      "title": "外務省 エチオピア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/ethiopia/data.html"
+     }
+    }
+   ],
+   "demography": [
+    {
+     "label": "人口",
+     "value": "1.35億人",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: Population, total SP.POP.TOTL",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+     }
+    },
+    {
+     "label": "面積",
+     "value": "1,129,819 km²",
+     "as_of": "2024",
+     "source": {
+      "title": "World Bank WDI: Surface area (sq. km) AG.SRF.TOTL.K2",
+      "url": "https://data.worldbank.org/indicator/AG.SRF.TOTL.K2"
+     }
+    },
+    {
+     "label": "首都",
+     "value": "アディスアベバ",
+     "as_of": "2025-09-29",
+     "source": {
+      "title": "外務省 エチオピア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/ethiopia/data.html"
+     }
+    }
+   ],
+   "fx": [
+    {
+     "label": "通貨",
+     "value": "エチオピア・ブル（ETB）",
+     "as_of": "2025-09-29",
+     "source": {
+      "title": "外務省 エチオピア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/ethiopia/data.html"
+     }
+    },
+    {
+     "label": "対円レート（CBE）",
+     "value": "1 ETB ≈ 0.99円 ／ 100円 ≈ 100.9 ETB",
+     "as_of": "2026-10-21",
+     "source": {
+      "title": "Commercial Bank of Ethiopia 日次為替レート（2026-10-21）",
+      "url": "https://combanketh.et/cbeapi/daily-exchange-rates/?Date=2026-10-21"
+     },
+     "note": "CBE 現金 円買 0.9987 ／ 円売 1.0187 ETB の仲値。参考：USD 買 160.83 ／ 売 164.05 ETB"
+    }
+   ],
+   "fx_parallel": {
+    "label": "並行市場レート（換算値）",
+    "value": "1 ETB ≈ 0.83円 ／ 100円 ≈ 121.2 ETB",
+    "as_of": "2026-10-21",
+    "source": {
+     "title": "ethiopianblackmarket.com（USD/ETB 並行市場レート）",
+     "url": "https://ethiopianblackmarket.com/usd"
+    },
+    "note": "並行市場 1 USD = 191.59 ETB（2026-10-21閲覧）を ECB 参照レート 1 USD = 158.13 円（2026-10-20）で換算した参考値"
+   },
+   "fx_parallel_sources": [
+    {
+     "title": "ethiopianblackmarket.com（USD/ETB 並行市場レート）",
+     "url": "https://ethiopianblackmarket.com/usd"
+    },
+    {
+     "title": "欧州中央銀行 参照レート（Frankfurter API 経由）USD/JPY",
+     "url": "https://api.frankfurter.dev/v1/latest?from=USD&to=JPY"
+    }
+   ],
+   "power": [
+    {
+     "label": "産業用",
+     "value": "2.051 ETB/kWh（≈2.03円）",
+     "as_of": "2025-06",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Ethiopia electricity prices",
+      "url": "https://www.globalpetrolprices.com/Ethiopia/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は CBE 2026-10-21 レート"
+    },
+    {
+     "label": "家庭用",
+     "value": "0.84 ETB/kWh（≈0.83円）",
+     "as_of": "2025-06",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Ethiopia electricity prices",
+      "url": "https://www.globalpetrolprices.com/Ethiopia/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は CBE 2026-10-21 レート"
+    }
+   ],
+   "wage": [
+    {
+     "label": "平均賃金（月額）",
+     "value": null,
+     "as_of": null,
+     "source": null,
+     "note": "公的統計の最新値を確認中"
+    }
+   ]
+  },
+  "DJ": {
+   "currency": {
+    "name": "ジブチ・フラン",
+    "code": "DJF"
+   },
+   "politics": [
+    {
+     "label": "政体",
+     "value": "共和制",
+     "as_of": "2025-11-05",
+     "source": {
+      "title": "外務省 ジブチ基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/djibouti/data.html"
+     }
+    },
+    {
+     "label": "元首",
+     "value": "イスマイル・オマール・ゲレ大統領",
+     "as_of": "2026-05-18",
+     "source": {
+      "title": "Dawan Media: Djibouti’s Guelleh appoints new cabinet（2026-05-18）",
+      "url": "https://www.dawan.africa/news/djiboutis-guelleh-appoints-new-cabinet-in-key-ministry-reshuffle"
+     }
+    },
+    {
+     "label": "首相・政府首脳",
+     "value": "アブドゥルカデル・カミル・モハメッド首相",
+     "as_of": "2026-05-18",
+     "source": {
+      "title": "Dawan Media: Djibouti’s Guelleh appoints new cabinet（2026-05-18）",
+      "url": "https://www.dawan.africa/news/djiboutis-guelleh-appoints-new-cabinet-in-key-ministry-reshuffle"
+     }
+    }
+   ],
+   "economy": [
+    {
+     "label": "名目GDP",
+     "value": "46億ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP (current US$) NY.GDP.MKTP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+     },
+     "note": "World Bank WDI（2026-10-08 更新）"
+    },
+    {
+     "label": "実質GDP成長率",
+     "value": "+6.5%",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP growth (annual %) NY.GDP.MKTP.KD.ZG",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+     }
+    },
+    {
+     "label": "1人当たりGDP",
+     "value": "3,906ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP per capita (current US$) NY.GDP.PCAP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD"
+     }
+    },
+    {
+     "label": "主要産業",
+     "value": "運輸（ジブチ港湾サービス、ジブチ鉄道）",
+     "as_of": "2025-11-05",
+     "source": {
+      "title": "外務省 ジブチ基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/djibouti/data.html"
+     }
+    }
+   ],
+   "demography": [
+    {
+     "label": "人口",
+     "value": "118万人",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: Population, total SP.POP.TOTL",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+     }
+    },
+    {
+     "label": "面積",
+     "value": "23,200 km²",
+     "as_of": "2024",
+     "source": {
+      "title": "World Bank WDI: Surface area (sq. km) AG.SRF.TOTL.K2",
+      "url": "https://data.worldbank.org/indicator/AG.SRF.TOTL.K2"
+     }
+    },
+    {
+     "label": "首都",
+     "value": "ジブチ",
+     "as_of": "2025-11-05",
+     "source": {
+      "title": "外務省 ジブチ基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/djibouti/data.html"
+     }
+    }
+   ],
+   "fx": [
+    {
+     "label": "通貨",
+     "value": "ジブチ・フラン（DJF）",
+     "as_of": "2025-11-05",
+     "source": {
+      "title": "外務省 ジブチ基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/djibouti/data.html"
+     }
+    },
+    {
+     "label": "対円レート",
+     "value": "1 DJF ≈ 0.89円 ／ 100円 ≈ 112.2 DJF",
+     "as_of": "2026-10-20",
+     "source": {
+      "title": "ExchangeRate-API（open.er-api.com）JPY 基準レート",
+      "url": "https://open.er-api.com/v6/latest/JPY"
+     },
+     "note": "米ドルに固定（1 USD = 177.721 DJF）"
+    }
+   ],
+   "power": [
+    {
+     "label": "産業用",
+     "value": null,
+     "as_of": null,
+     "source": null,
+     "note": "出典ページを取得できず確認中"
+    },
+    {
+     "label": "家庭用",
+     "value": null,
+     "as_of": null,
+     "source": null,
+     "note": "出典ページを取得できず確認中"
+    }
+   ],
+   "wage": [
+    {
+     "label": "平均賃金（月額）",
+     "value": null,
+     "as_of": null,
+     "source": null
+    }
+   ]
+  },
+  "KE": {
+   "currency": {
+    "name": "ケニア・シリング",
+    "code": "KES"
+   },
+   "politics": [
+    {
+     "label": "政体",
+     "value": "共和制（大統領制）",
+     "as_of": "2025-11-06",
+     "source": {
+      "title": "外務省 ケニア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/kenya/data.html"
+     }
+    },
+    {
+     "label": "元首",
+     "value": "ウィリアム・ルト大統領",
+     "as_of": "2026-08",
+     "source": {
+      "title": "ケニア大統領府 Speeches（2026年8月）",
+      "url": "https://www.president.go.ke/speeches/page/2/"
+     }
+    },
+    {
+     "label": "首相・政府首脳",
+     "value": "大統領が政府の長を兼任（首相職なし）",
+     "as_of": "2026-08",
+     "source": {
+      "title": "ケニア大統領府 Speeches（2026年8月）",
+      "url": "https://www.president.go.ke/speeches/page/2/"
+     }
+    }
+   ],
+   "economy": [
+    {
+     "label": "名目GDP",
+     "value": "1,359億ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP (current US$) NY.GDP.MKTP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+     },
+     "note": "World Bank WDI（2026-10-08 更新）"
+    },
+    {
+     "label": "実質GDP成長率",
+     "value": "+4.6%",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP growth (annual %) NY.GDP.MKTP.KD.ZG",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+     }
+    },
+    {
+     "label": "1人当たりGDP",
+     "value": "2,363ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP per capita (current US$) NY.GDP.PCAP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD"
+     }
+    },
+    {
+     "label": "主要産業",
+     "value": "農業（紅茶・コーヒー・園芸作物）、食品加工・セメント等の工業、ソーダ灰",
+     "as_of": "2025-11-06",
+     "source": {
+      "title": "外務省 ケニア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/kenya/data.html"
+     }
+    }
+   ],
+   "demography": [
+    {
+     "label": "人口",
+     "value": "5,753万人",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: Population, total SP.POP.TOTL",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+     }
+    },
+    {
+     "label": "面積",
+     "value": "591,970 km²",
+     "as_of": "2024",
+     "source": {
+      "title": "World Bank WDI: Surface area (sq. km) AG.SRF.TOTL.K2",
+      "url": "https://data.worldbank.org/indicator/AG.SRF.TOTL.K2"
+     }
+    },
+    {
+     "label": "首都",
+     "value": "ナイロビ",
+     "as_of": "2025-11-06",
+     "source": {
+      "title": "外務省 ケニア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/kenya/data.html"
+     }
+    }
+   ],
+   "fx": [
+    {
+     "label": "通貨",
+     "value": "ケニア・シリング（KES）",
+     "as_of": "2025-11-06",
+     "source": {
+      "title": "外務省 ケニア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/kenya/data.html"
+     }
+    },
+    {
+     "label": "対円レート",
+     "value": "1 KES ≈ 1.22円 ／ 100円 ≈ 82.0 KES",
+     "as_of": "2026-10-20",
+     "source": {
+      "title": "ExchangeRate-API（open.er-api.com）JPY 基準レート",
+      "url": "https://open.er-api.com/v6/latest/JPY"
+     }
+    }
+   ],
+   "power": [
+    {
+     "label": "産業用",
+     "value": "23.3 KES/kWh（≈28.4円）",
+     "as_of": "2025-06",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Kenya electricity prices",
+      "url": "https://www.globalpetrolprices.com/Kenya/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は2026年10月20〜21日のレート"
+    },
+    {
+     "label": "家庭用",
+     "value": "28.43 KES/kWh（≈34.7円）",
+     "as_of": "2025-06",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Kenya electricity prices",
+      "url": "https://www.globalpetrolprices.com/Kenya/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は2026年10月20〜21日のレート"
+    }
+   ],
+   "wage": [
+    {
+     "label": "平均賃金（月額）",
+     "value": "77,758 KES（≈94,807円）",
+     "as_of": "2024",
+     "source": {
+      "title": "The Star（KNBS Economic Survey 2025）: Annual real average wage earnings（2025-12-22）",
+      "url": "https://www.the-star.co.ke/news/infographics/2025-12-22-annual-real-average-age-earnings"
+     },
+     "note": "口径：フォーマル部門 1人当たり名目平均賃金 年額 933,100 KES を12で割った月額換算"
+    }
+   ]
+  },
+  "AE": {
+   "currency": {
+    "name": "UAE ディルハム",
+    "code": "AED"
+   },
+   "politics": [
+    {
+     "label": "政体",
+     "value": "7首長国による連邦制",
+     "as_of": "2024-12-13",
+     "source": {
+      "title": "外務省 アラブ首長国連邦基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/uae/data.html"
+     }
+    },
+    {
+     "label": "元首",
+     "value": "ムハンマド・ビン・ザーイド大統領（アブダビ首長）",
+     "as_of": "2026-08-29",
+     "source": {
+      "title": "Khaleej Times: UAE President, Dubai Ruler meet（2026-08-29）",
+      "url": "https://www.khaleejtimes.com/uae/uae-president-dubai-ruler-meet-al-marmoom-august-29-2026"
+     }
+    },
+    {
+     "label": "首相・政府首脳",
+     "value": "ムハンマド・ビン・ラーシド副大統領兼首相（ドバイ首長）",
+     "as_of": "2026-08-29",
+     "source": {
+      "title": "Khaleej Times: UAE President, Dubai Ruler meet（2026-08-29）",
+      "url": "https://www.khaleejtimes.com/uae/uae-president-dubai-ruler-meet-al-marmoom-august-29-2026"
+     }
+    }
+   ],
+   "economy": [
+    {
+     "label": "名目GDP",
+     "value": "5,523億ドル",
+     "as_of": "2024",
+     "source": {
+      "title": "World Bank WDI: GDP (current US$) NY.GDP.MKTP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+     },
+     "note": "World Bank WDI（2026-10-08 更新）。2025年値は未公表のため2024年"
+    },
+    {
+     "label": "実質GDP成長率",
+     "value": "+4.0%",
+     "as_of": "2024",
+     "source": {
+      "title": "World Bank WDI: GDP growth (annual %) NY.GDP.MKTP.KD.ZG",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+     }
+    },
+    {
+     "label": "1人当たりGDP",
+     "value": "50,274ドル",
+     "as_of": "2024",
+     "source": {
+      "title": "World Bank WDI: GDP per capita (current US$) NY.GDP.PCAP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD"
+     }
+    },
+    {
+     "label": "主要産業",
+     "value": "石油・天然ガス、建設、サービス",
+     "as_of": "2024-12-13",
+     "source": {
+      "title": "外務省 アラブ首長国連邦基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/uae/data.html"
+     }
+    }
+   ],
+   "demography": [
+    {
+     "label": "人口",
+     "value": "1,151万人",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: Population, total SP.POP.TOTL",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+     }
+    },
+    {
+     "label": "面積",
+     "value": "98,648 km²",
+     "as_of": "2024",
+     "source": {
+      "title": "World Bank WDI: Surface area (sq. km) AG.SRF.TOTL.K2",
+      "url": "https://data.worldbank.org/indicator/AG.SRF.TOTL.K2"
+     }
+    },
+    {
+     "label": "首都",
+     "value": "アブダビ",
+     "as_of": "2024-12-13",
+     "source": {
+      "title": "外務省 アラブ首長国連邦基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/uae/data.html"
+     }
+    }
+   ],
+   "fx": [
+    {
+     "label": "通貨",
+     "value": "UAE ディルハム（AED）",
+     "as_of": "2024-12-13",
+     "source": {
+      "title": "外務省 アラブ首長国連邦基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/uae/data.html"
+     }
+    },
+    {
+     "label": "対円レート",
+     "value": "1 AED ≈ 43.1円 ／ 100円 ≈ 2.318 AED",
+     "as_of": "2026-10-20",
+     "source": {
+      "title": "ExchangeRate-API（open.er-api.com）JPY 基準レート",
+      "url": "https://open.er-api.com/v6/latest/JPY"
+     },
+     "note": "米ドルに固定（1 USD = 3.6725 AED）"
+    }
+   ],
+   "power": [
+    {
+     "label": "産業用",
+     "value": "0.405 AED/kWh（≈17.5円）",
+     "as_of": "2025-06",
+     "source": {
+      "title": "GlobalPetrolPrices.com: United-Arab-Emirates electricity prices",
+      "url": "https://www.globalpetrolprices.com/United-Arab-Emirates/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は2026年10月20〜21日のレート"
+    },
+    {
+     "label": "家庭用",
+     "value": "0.293 AED/kWh（≈12.6円）",
+     "as_of": "2025-06",
+     "source": {
+      "title": "GlobalPetrolPrices.com: United-Arab-Emirates electricity prices",
+      "url": "https://www.globalpetrolprices.com/United-Arab-Emirates/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は2026年10月20〜21日のレート"
+    }
+   ],
+   "wage": [
+    {
+     "label": "平均賃金（月額）",
+     "value": null,
+     "as_of": null,
+     "source": null
+    }
+   ]
+  },
+  "SA": {
+   "currency": {
+    "name": "サウジアラビア・リヤル",
+    "code": "SAR"
+   },
+   "politics": [
+    {
+     "label": "政体",
+     "value": "君主制",
+     "as_of": "2026-02-10",
+     "source": {
+      "title": "外務省 サウジアラビア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/saudi/data.html"
+     }
+    },
+    {
+     "label": "元首",
+     "value": "サルマン国王",
+     "as_of": "2026-09-22",
+     "source": {
+      "title": "Asharq Al-Awsat: Saudi King Hails Forces Defending Kingdom（2026-09-22）",
+      "url": "https://english.aawsat.com/node/5321227"
+     }
+    },
+    {
+     "label": "首相・政府首脳",
+     "value": "ムハンマド・ビン・サルマン皇太子兼首相",
+     "as_of": "2026-09-22",
+     "source": {
+      "title": "Asharq Al-Awsat: Saudi King Hails Forces Defending Kingdom（2026-09-22）",
+      "url": "https://english.aawsat.com/node/5321227"
+     }
+    }
+   ],
+   "economy": [
+    {
+     "label": "名目GDP",
+     "value": "1.28兆ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP (current US$) NY.GDP.MKTP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+     },
+     "note": "World Bank WDI（2026-10-08 更新）"
+    },
+    {
+     "label": "実質GDP成長率",
+     "value": "+4.5%",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP growth (annual %) NY.GDP.MKTP.KD.ZG",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+     }
+    },
+    {
+     "label": "1人当たりGDP",
+     "value": "34,537ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP per capita (current US$) NY.GDP.PCAP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD"
+     }
+    },
+    {
+     "label": "主要産業",
+     "value": "石油、LPG、石油化学",
+     "as_of": "2026-02-10",
+     "source": {
+      "title": "外務省 サウジアラビア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/saudi/data.html"
+     }
+    }
+   ],
+   "demography": [
+    {
+     "label": "人口",
+     "value": "3,697万人",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: Population, total SP.POP.TOTL",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+     }
+    },
+    {
+     "label": "面積",
+     "value": "2,149,690 km²",
+     "as_of": "2024",
+     "source": {
+      "title": "World Bank WDI: Surface area (sq. km) AG.SRF.TOTL.K2",
+      "url": "https://data.worldbank.org/indicator/AG.SRF.TOTL.K2"
+     }
+    },
+    {
+     "label": "首都",
+     "value": "リヤド",
+     "as_of": "2026-02-10",
+     "source": {
+      "title": "外務省 サウジアラビア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/saudi/data.html"
+     }
+    }
+   ],
+   "fx": [
+    {
+     "label": "通貨",
+     "value": "サウジアラビア・リヤル（SAR）",
+     "as_of": "2026-02-10",
+     "source": {
+      "title": "外務省 サウジアラビア基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/saudi/data.html"
+     }
+    },
+    {
+     "label": "対円レート",
+     "value": "1 SAR ≈ 42.3円 ／ 100円 ≈ 2.367 SAR",
+     "as_of": "2026-10-20",
+     "source": {
+      "title": "ExchangeRate-API（open.er-api.com）JPY 基準レート",
+      "url": "https://open.er-api.com/v6/latest/JPY"
+     },
+     "note": "米ドルに固定（1 USD = 3.75 SAR）"
+    }
+   ],
+   "power": [
+    {
+     "label": "産業用",
+     "value": "0.257 SAR/kWh（≈10.9円）",
+     "as_of": "2025-06",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Saudi-Arabia electricity prices",
+      "url": "https://www.globalpetrolprices.com/Saudi-Arabia/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は2026年10月20〜21日のレート"
+    },
+    {
+     "label": "家庭用",
+     "value": "0.2 SAR/kWh（≈8.45円）",
+     "as_of": "2025-06",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Saudi-Arabia electricity prices",
+      "url": "https://www.globalpetrolprices.com/Saudi-Arabia/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は2026年10月20〜21日のレート"
+    }
+   ],
+   "wage": [
+    {
+     "label": "平均賃金（月額）",
+     "value": "11,103 SAR（≈469,114円）",
+     "as_of": "2025-Q4",
+     "source": {
+      "title": "Okaz（GASTAT 労働市場統計）2026-04-28",
+      "url": "https://www.okaz.com.sa/economy/na/2246131"
+     },
+     "note": "口径：サウジ国籍就業者の平均月額賃金（外国人就業者は 4,131 SAR）"
+    }
+   ]
+  },
+  "OM": {
+   "currency": {
+    "name": "オマーン・リアル",
+    "code": "OMR"
+   },
+   "politics": [
+    {
+     "label": "政体",
+     "value": "君主制",
+     "as_of": "2026-02-10",
+     "source": {
+      "title": "外務省 オマーン基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/oman/data.html"
+     }
+    },
+    {
+     "label": "元首",
+     "value": "ハイサム・ビン・ターリク国王",
+     "as_of": "2026-10-17",
+     "source": {
+      "title": "Muscat Daily: HM Sultan Haitham to embark on UK state visit（2026-10-17）",
+      "url": "https://www.muscatdaily.com/2026/10/17/h-m-sultan-haitham-to-embark-on-uk-state-visit-on-monday/"
+     }
+    },
+    {
+     "label": "首相・政府首脳",
+     "value": "国王が首相を兼任",
+     "as_of": "2026-02-10",
+     "source": {
+      "title": "外務省 オマーン基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/oman/data.html"
+     }
+    }
+   ],
+   "economy": [
+    {
+     "label": "名目GDP",
+     "value": "1,096億ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP (current US$) NY.GDP.MKTP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+     },
+     "note": "World Bank WDI（2026-10-08 更新）"
+    },
+    {
+     "label": "実質GDP成長率",
+     "value": "+2.4%",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP growth (annual %) NY.GDP.MKTP.KD.ZG",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+     }
+    },
+    {
+     "label": "1人当たりGDP",
+     "value": "19,947ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP per capita (current US$) NY.GDP.PCAP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD"
+     }
+    },
+    {
+     "label": "主要産業",
+     "value": "石油・天然ガス関連、農漁業、観光",
+     "as_of": "2026-02-10",
+     "source": {
+      "title": "外務省 オマーン基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/oman/data.html"
+     }
+    }
+   ],
+   "demography": [
+    {
+     "label": "人口",
+     "value": "549万人",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: Population, total SP.POP.TOTL",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+     }
+    },
+    {
+     "label": "面積",
+     "value": "309,500 km²",
+     "as_of": "2024",
+     "source": {
+      "title": "World Bank WDI: Surface area (sq. km) AG.SRF.TOTL.K2",
+      "url": "https://data.worldbank.org/indicator/AG.SRF.TOTL.K2"
+     }
+    },
+    {
+     "label": "首都",
+     "value": "マスカット",
+     "as_of": "2026-02-10",
+     "source": {
+      "title": "外務省 オマーン基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/oman/data.html"
+     }
+    }
+   ],
+   "fx": [
+    {
+     "label": "通貨",
+     "value": "オマーン・リアル（OMR）",
+     "as_of": "2026-02-10",
+     "source": {
+      "title": "外務省 オマーン基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/oman/data.html"
+     }
+    },
+    {
+     "label": "対円レート",
+     "value": "1 OMR ≈ 412円 ／ 100円 ≈ 0.2427 OMR",
+     "as_of": "2026-10-20",
+     "source": {
+      "title": "ExchangeRate-API（open.er-api.com）JPY 基準レート",
+      "url": "https://open.er-api.com/v6/latest/JPY"
+     },
+     "note": "米ドルに固定（1 USD ≈ 0.3845 OMR）"
+    }
+   ],
+   "power": [
+    {
+     "label": "産業用",
+     "value": "0.067 OMR/kWh（≈27.6円）",
+     "as_of": "2025-06",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Oman electricity prices",
+      "url": "https://www.globalpetrolprices.com/Oman/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は2026年10月20〜21日のレート"
+    },
+    {
+     "label": "家庭用",
+     "value": "0.014 OMR/kWh（≈5.77円）",
+     "as_of": "2025-06",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Oman electricity prices",
+      "url": "https://www.globalpetrolprices.com/Oman/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は2026年10月20〜21日のレート"
+    }
+   ],
+   "wage": [
+    {
+     "label": "最低賃金（月額）",
+     "value": "325 OMR（≈133,910円）",
+     "as_of": "2023-07",
+     "source": {
+      "title": "Oman Observer: Shura approves demands for wage hikes in private sector（2023-07-18）",
+      "url": "https://www.omanobserver.om/ampArticle/1140293"
+     },
+     "note": "口径：民間部門のオマーン国民の最低賃金（平均賃金は確認中）"
+    }
+   ]
+  },
+  "QA": {
+   "currency": {
+    "name": "カタール・リヤル",
+    "code": "QAR"
+   },
+   "politics": [
+    {
+     "label": "政体",
+     "value": "首長制",
+     "as_of": "2026-06-05",
+     "source": {
+      "title": "外務省 カタール基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/qatar/data.html"
+     }
+    },
+    {
+     "label": "元首",
+     "value": "タミーム・ビン・ハマド首長",
+     "as_of": "2026-06-05",
+     "source": {
+      "title": "外務省 カタール基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/qatar/data.html"
+     }
+    },
+    {
+     "label": "首相・政府首脳",
+     "value": "ムハンマド・ビン・アブドルラフマン首相兼外相",
+     "as_of": "2026-10",
+     "source": {
+      "title": "カタール政府広報局 首相略歴",
+      "url": "https://www.gco.gov.qa/en/the-prime-minister/biography/"
+     }
+    }
+   ],
+   "economy": [
+    {
+     "label": "名目GDP",
+     "value": "2,156億ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP (current US$) NY.GDP.MKTP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+     },
+     "note": "World Bank WDI（2026-10-08 更新）"
+    },
+    {
+     "label": "実質GDP成長率",
+     "value": "+2.9%",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP growth (annual %) NY.GDP.MKTP.KD.ZG",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+     }
+    },
+    {
+     "label": "1人当たりGDP",
+     "value": "72,525ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP per capita (current US$) NY.GDP.PCAP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD"
+     }
+    },
+    {
+     "label": "主要産業",
+     "value": "原油・天然ガス（LNG）",
+     "as_of": "2026-06-05",
+     "source": {
+      "title": "外務省 カタール基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/qatar/data.html"
+     }
+    }
+   ],
+   "demography": [
+    {
+     "label": "人口",
+     "value": "297万人",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: Population, total SP.POP.TOTL",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+     }
+    },
+    {
+     "label": "面積",
+     "value": "11,637 km²",
+     "as_of": "2024",
+     "source": {
+      "title": "World Bank WDI: Surface area (sq. km) AG.SRF.TOTL.K2",
+      "url": "https://data.worldbank.org/indicator/AG.SRF.TOTL.K2"
+     }
+    },
+    {
+     "label": "首都",
+     "value": "ドーハ",
+     "as_of": "2026-06-05",
+     "source": {
+      "title": "外務省 カタール基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/qatar/data.html"
+     }
+    }
+   ],
+   "fx": [
+    {
+     "label": "通貨",
+     "value": "カタール・リヤル（QAR）",
+     "as_of": "2026-06-05",
+     "source": {
+      "title": "外務省 カタール基礎データ",
+      "url": "https://www.mofa.go.jp/mofaj/area/qatar/data.html"
+     }
+    },
+    {
+     "label": "対円レート",
+     "value": "1 QAR ≈ 43.5円 ／ 100円 ≈ 2.297 QAR",
+     "as_of": "2026-10-20",
+     "source": {
+      "title": "ExchangeRate-API（open.er-api.com）JPY 基準レート",
+      "url": "https://open.er-api.com/v6/latest/JPY"
+     },
+     "note": "米ドルに固定（1 USD = 3.64 QAR）"
+    }
+   ],
+   "power": [
+    {
+     "label": "産業用",
+     "value": "0.13 QAR/kWh（≈5.66円）",
+     "as_of": "2025-03",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Qatar electricity prices",
+      "url": "https://www.globalpetrolprices.com/Qatar/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は2026年10月20〜21日のレート"
+    },
+    {
+     "label": "家庭用",
+     "value": "0.115 QAR/kWh（≈5.01円）",
+     "as_of": "2025-03",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Qatar electricity prices",
+      "url": "https://www.globalpetrolprices.com/Qatar/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価。円換算は2026年10月20〜21日のレート"
+    }
+   ],
+   "wage": [
+    {
+     "label": "最低賃金（月額）",
+     "value": "1,000 QAR（≈43,527円）＋住居 500・食費 300 QAR",
+     "as_of": "2021-03",
+     "source": {
+      "title": "Gulf News: Minimum wage for expats takes effect in Qatar（2021-03-21）",
+      "url": "https://gulfnews.com/world/gulf/qatar/minimum-wage-for-expats-takes-effect-in-qatar-1.77992608"
+     },
+     "note": "口径：全労働者の法定最低基本給。住居・食事を雇用主が現物支給する場合は手当不要（平均賃金は確認中）"
+    }
+   ]
+  },
+  "JP": {
+   "currency": {
+    "name": "日本円",
+    "code": "JPY"
+   },
+   "politics": [
+    {
+     "label": "政体",
+     "value": "立憲君主制・議院内閣制",
+     "as_of": "2026-10-21",
+     "source": {
+      "title": "首相官邸",
+      "url": "https://www.kantei.go.jp/"
+     }
+    },
+    {
+     "label": "元首",
+     "value": "天皇（憲法上は「日本国の象徴」）",
+     "as_of": "2026-10-21",
+     "source": {
+      "title": "宮内庁",
+      "url": "https://www.kunaicho.go.jp/"
+     }
+    },
+    {
+     "label": "首相・政府首脳",
+     "value": "高市早苗 内閣総理大臣",
+     "as_of": "2026-10-20",
+     "source": {
+      "title": "首相官邸 Prime Minister’s Actions（2026-10-20）",
+      "url": "https://japan.kantei.go.jp/105/actions/index.html"
+     }
+    }
+   ],
+   "economy": [
+    {
+     "label": "名目GDP",
+     "value": "4.44兆ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP (current US$) NY.GDP.MKTP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD"
+     },
+     "note": "World Bank WDI（2026-10-08 更新）"
+    },
+    {
+     "label": "実質GDP成長率",
+     "value": "+1.2%",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP growth (annual %) NY.GDP.MKTP.KD.ZG",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG"
+     }
+    },
+    {
+     "label": "1人当たりGDP",
+     "value": "35,951ドル",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: GDP per capita (current US$) NY.GDP.PCAP.CD",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.CD"
+     }
+    },
+    {
+     "label": "主要産業",
+     "value": null,
+     "as_of": null,
+     "source": null
+    }
+   ],
+   "demography": [
+    {
+     "label": "人口",
+     "value": "1.23億人",
+     "as_of": "2025",
+     "source": {
+      "title": "World Bank WDI: Population, total SP.POP.TOTL",
+      "url": "https://data.worldbank.org/indicator/SP.POP.TOTL"
+     }
+    },
+    {
+     "label": "面積",
+     "value": "377,975 km²",
+     "as_of": "2024",
+     "source": {
+      "title": "World Bank WDI: Surface area (sq. km) AG.SRF.TOTL.K2",
+      "url": "https://data.worldbank.org/indicator/AG.SRF.TOTL.K2"
+     }
+    },
+    {
+     "label": "首都",
+     "value": "東京",
+     "as_of": "2026-10",
+     "source": {
+      "title": "World Bank Country API: Japan",
+      "url": "https://api.worldbank.org/v2/country/JPN?format=json"
+     }
+    }
+   ],
+   "fx": [
+    {
+     "label": "通貨",
+     "value": "日本円（JPY）",
+     "as_of": "2026-10-20",
+     "source": {
+      "title": "欧州中央銀行 参照レート（Frankfurter API 経由）",
+      "url": "https://api.frankfurter.dev/v1/latest?from=USD&to=JPY"
+     }
+    },
+    {
+     "label": "対ドル",
+     "value": "1 USD = 158.13 円",
+     "as_of": "2026-10-20",
+     "source": {
+      "title": "欧州中央銀行 参照レート（Frankfurter API 経由）USD/JPY",
+      "url": "https://api.frankfurter.dev/v1/latest?from=USD&to=JPY"
+     },
+     "note": "比較の基準"
+    }
+   ],
+   "power": [
+    {
+     "label": "産業用",
+     "value": "28.98円/kWh",
+     "as_of": "2025-03",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Japan electricity prices",
+      "url": "https://www.globalpetrolprices.com/Japan/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価"
+    },
+    {
+     "label": "家庭用",
+     "value": "35.87円/kWh",
+     "as_of": "2025-03",
+     "source": {
+      "title": "GlobalPetrolPrices.com: Japan electricity prices",
+      "url": "https://www.globalpetrolprices.com/Japan/electricity_prices/"
+     },
+     "note": "税・託送込みの小売単価"
+    }
+   ],
+   "wage": [
+    {
+     "label": "平均賃金（月額）",
+     "value": "340,600円",
+     "as_of": "2025",
+     "source": {
+      "title": "厚生労働省 令和7年賃金構造基本統計調査",
+      "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2025/index.html"
+     },
+     "note": "口径：一般労働者（男女計）の所定内給与額、2026-03-24 公表"
+    }
+   ]
+  }
+ }
+}

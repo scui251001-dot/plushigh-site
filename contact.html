@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light dark">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ | 株式会社プラスハイ</title>
+<meta name="description" content="株式会社プラスハイへのお問い合わせ。個別相談チャットまたはフォームからどうぞ。">
+<meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121315" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="お問い合わせ | 株式会社プラスハイ">
+<meta property="og:description" content="株式会社プラスハイへのお問い合わせ。個別相談チャットまたはフォームからどうぞ。">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/matching.css">
+</head>
+<body class="contact-page">
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="home.html" aria-label="株式会社プラスハイ（PLUSHIGH）トップ">
+      <svg class="logo" viewBox="0 0 76 40" role="img" aria-label="+81"><path class="logo-plus" d="M4 20h15M11.5 12.5v15"/><path d="M36 6.2a6.9 6.9 0 1 1 0 13.8a6.9 6.9 0 1 1 0-13.8zM36 20a8.1 8.1 0 1 1 0 16.2a8.1 8.1 0 1 1 0-16.2z"/><path d="M54 11.2L60.5 6v30.2"/></svg>
+      <span class="brand-name"><b>PLUSHIGH</b><small>株式会社プラスハイ</small></span>
+    </a>
+    <nav class="site-nav" aria-label="サイト内">
+      <a class="nav-l" href="home.html#about">私たちについて</a>
+      <a class="nav-l" href="home.html#people">代表</a>
+      <a class="nav-l" href="home.html#business">事業</a>
+      <a class="nav-l" href="matching.html">ビジネスマッチング</a>
+      <a class="nav-cta" href="tsushin.html">ビジネス通信<span class="nav-cta-sub">エチオピア・中東アフリカ</span></a>
+      <a class="nav-l" href="home.html#group">関連会社</a>
+      <a class="nav-l" href="home.html#contact" aria-current="page">お問い合わせ</a>
+      <button class="nav-en" type="button" data-en aria-label="English (coming soon)">EN</button>
+      <details class="nav-more">
+        <summary aria-label="メニュー"><span class="burger" aria-hidden="true"><i></i><i></i><i></i></span></summary>
+        <div class="nav-pop">
+          <a href="home.html">ホーム</a>
+          <a href="home.html#about">私たちについて</a>
+          <a href="home.html#people">代表</a>
+          <a href="home.html#business">事業</a>
+          <a href="matching.html">ビジネスマッチング</a>
+          <a href="tsushin.html">ビジネス通信 <small>エチオピア・中東アフリカ</small></a>
+          <a href="coffee.html">MTC コーヒー</a>
+          <a href="home.html#group">関連会社</a>
+          <a href="home.html#contact" aria-current="page">お問い合わせ</a>
+        </div>
+      </details>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero m-hero">
+    <div class="wrap">
+      <p class="eyebrow">CONTACT</p>
+      <h1>お問い合わせ</h1>
+      <p class="lead">ビジネス通信の購読、ビジネスマッチング、人材育成、コンサルティング、MTC コーヒーなど、お気軽にお寄せください。担当者が内容を確認し、ご連絡します。</p>
+      <div class="hero-actions"><button class="btn lg" type="button" data-open-chat>チャットで相談する</button><a class="btn ghost lg" href="matching.html">ビジネスマッチングを見る</a></div>
+    </div>
+  </section>
+  <section class="block" id="contact-form" aria-labelledby="h-cf">
+    <div class="wrap narrow">
+      <div class="block-head"><h2 id="h-cf">お問い合わせフォーム</h2><span class="en">Form</span></div>
+      <form class="form m-form" data-endpoint="/api/contact" novalidate>
+        <label>お問い合わせの種類 <em>必須</em>
+          <select class="input" name="kind" required>
+            <option value="subscription">ビジネス通信の購読</option><option value="matching">ビジネスマッチング</option><option value="talent">人材育成</option>
+            <option value="consulting">コンサルティング</option><option value="mtc">MTC コーヒー</option><option value="other" selected>その他</option>
+          </select>
+        </label>
+        <div class="m-grid">
+          <label>会社名（任意）<input class="input" name="company" maxlength="120" autocomplete="organization"></label>
+          <label>お名前 <em>必須</em><input class="input" name="contact_name" maxlength="80" required autocomplete="name"></label>
+          <label>メールアドレス <em>必須</em><input class="input" name="email" type="email" maxlength="254" required autocomplete="email"></label>
+          <label>電話番号（任意）<input class="input" name="phone" type="tel" maxlength="40" autocomplete="tel"></label>
+        </div>
+        <label>お問い合わせ内容 <em>必須</em><textarea class="textarea" name="notes" maxlength="2000" required></textarea></label>
+        <div class="hp" aria-hidden="true"><label>確認用<input name="nickname_confirm" tabindex="-1" autocomplete="off"></label></div>
+        <label class="m-consent"><input type="checkbox" name="consent" required> <span><a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意し、入力内容をプラスハイがお問い合わせへの対応のために利用することに同意します。</span></label>
+        <div class="form-row"><span class="form-msg" role="status"></span><button class="btn" type="submit">送信する</button></div>
+      </form>
+      <div class="m-done form-done" hidden>
+        <p class="m-done-h">お問い合わせを受け付けました。</p>
+        <p>プラスハイが内容を確認のうえ、担当者からご連絡します。</p>
+        <button class="btn ghost" type="button" data-again>別のお問い合わせを送る</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 株式会社プラスハイ ・ <a href="terms.html">利用規約</a> ・ <a href="privacy.html">プライバシーポリシー</a></span>
+    <span>掲載情報は公開資料に基づく参考情報であり、投資判断の助言ではありません。</span>
+  </div>
+</footer>
+<script src="assets/common.js" defer></script>
+<script src="assets/forms.js" defer></script>
+<script src="assets/chat.js" defer></script>
+<script src="assets/subnav.js" defer></script>
+</body>
+</html>

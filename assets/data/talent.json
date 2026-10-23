@@ -1,0 +1,191 @@
+{
+  "updated": "2026-10-21",
+  "note": "数値は各出典の公表値。出典で確認できない項目は「データ確認中」とし、推計・補完はしない。更新時は value / year / source / url を差し替える。",
+  "japan": {
+    "label": "日本",
+    "items": [
+      {
+        "key": "population",
+        "label": "総人口",
+        "value": "1億2320万3千人",
+        "year": "2025年11月1日現在（確定値）",
+        "source": "総務省統計局「人口推計」",
+        "url": "https://www.stat.go.jp/data/jinsui/pdf/202604.pdf"
+      },
+      {
+        "key": "working_age",
+        "label": "生産年齢人口（15〜64歳）",
+        "value": "7354万3千人",
+        "year": "2025年11月1日現在（確定値）",
+        "source": "総務省統計局「人口推計」",
+        "url": "https://www.stat.go.jp/data/jinsui/pdf/202604.pdf"
+      },
+      {
+        "key": "working_age_trend",
+        "label": "生産年齢人口の推移",
+        "value": "1995年をピークに減少。2030年には6,773万人まで減少する見込み（2012年時点の中位推計）",
+        "year": "2016年版白書",
+        "source": "総務省「情報通信白書」平成28年版（国立社会保障・人口問題研究所の推計を引用）",
+        "url": "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/h28/html/nc111110.html"
+      },
+      {
+        "key": "foreign_workers",
+        "label": "外国人労働者数",
+        "value": "257万1,037人（前年比 +11.7%、過去最多）",
+        "year": "2025年10月末",
+        "source": "厚生労働省「外国人雇用状況」の届出状況まとめ",
+        "url": "https://www.mhlw.go.jp/stf/newpage_68794.html"
+      },
+      {
+        "key": "ssw_residents",
+        "label": "特定技能の在留者数",
+        "value": "44万4,256人",
+        "year": "2026年6月末",
+        "source": "出入国在留管理庁発表（共同通信の報道による）",
+        "url": "https://kumanichi.com/articles/2047152"
+      },
+      {
+        "key": "ssw_fields",
+        "label": "特定技能の対象分野",
+        "value": "介護、ビルクリーニング、工業製品製造業、建設、造船・舶用工業、自動車整備、航空、宿泊、農業、漁業、飲食料品製造業、外食業、自動車運送業、鉄道、林業、木材産業 など。2026年1月23日の閣議決定で分野別運用方針が定められ、リネンサプライ、物流倉庫、資源循環が加わった（新分野は省令等の準備が整い次第受入れ可能）",
+        "year": "2026年1月23日閣議決定",
+        "source": "出入国在留管理庁「特定技能制度及び育成就労制度の分野別運用方針」",
+        "url": "https://www.moj.go.jp/isa/03_00169.html"
+      },
+      {
+        "key": "shortage",
+        "label": "人手不足が深刻な分野",
+        "value": "特定技能は、国内での人材確保の取組を行ってもなお人材確保が困難な産業分野で外国人材を受け入れる制度。介護、建設、外食、農業、製造業などが対象。職業別の有効求人倍率の数値はデータ確認中",
+        "year": "—",
+        "source": "出入国在留管理庁（制度の対象分野）",
+        "url": "https://www.moj.go.jp/isa/03_00169.html"
+      }
+    ]
+  },
+  "ethiopia": {
+    "label": "エチオピア",
+    "items": [
+      {
+        "key": "population",
+        "label": "総人口",
+        "value": "1億3547万2,051人",
+        "year": "2025年",
+        "source": "世界銀行 World Development Indicators（FRED 経由）",
+        "url": "https://fred.stlouisfed.org/series/POPTOTETA647NWDB"
+      },
+      {
+        "key": "median_age",
+        "label": "年齢中央値",
+        "value": "20.1歳",
+        "year": "2025年",
+        "source": "国連 World Population Prospects に基づく集計（georank.org）",
+        "url": "https://georank.org/demographics/ethiopia"
+      },
+      {
+        "key": "labor_force",
+        "label": "労働力人口",
+        "value": "データ確認中",
+        "year": "",
+        "source": "",
+        "url": ""
+      },
+      {
+        "key": "youth_unemployment",
+        "label": "若年失業率（15〜24歳）",
+        "value": "5.4%（ILO モデル推計。非正規・不完全就業は含まれない点に注意）",
+        "year": "2025年",
+        "source": "ILO モデル推計（世界銀行 / FRED 経由）",
+        "url": "https://fred.stlouisfed.org/series/SLUEM1524ZSETH"
+      },
+      {
+        "key": "overseas",
+        "label": "海外就労",
+        "value": "海外での就労機会を得た人は、2017年度（エチオピア暦）までに50万3千人。今年度は80万人の送り出しを目標とする",
+        "year": "2025年12月（労働技能大臣の議会説明）",
+        "source": "エチオピア通信社（ENA）／AllAfrica",
+        "url": "https://allafrica.com/stories/202512160068.html"
+      },
+      {
+        "key": "migration_share",
+        "label": "移住経験者の割合",
+        "value": "人口の17.1%（ティグライ州を除く）",
+        "year": "2021年 労働力・移住調査",
+        "source": "ILO",
+        "url": "https://www.ilo.org/resource/news/ethiopian-labour-migration-landscape-trends-challenges-and-approaches"
+      }
+    ]
+  },
+  "destinations": {
+    "note": "国別の送り出し人数は公的な内訳を確認できていないため、線の太さは一律（方向のみ）。",
+    "source": "ILO（2023年9月）、ENA（2025年12月）",
+    "url": "https://www.ilo.org/resource/news/ethiopian-labour-migration-landscape-trends-challenges-and-approaches",
+    "list": [
+      {
+        "code": "SA",
+        "name": "サウジアラビア",
+        "city": "リヤド",
+        "lat": 24.71,
+        "lon": 46.68,
+        "count": null,
+        "note": "主要な就労先。2023年初めに家事労働者の受け入れを再開（ILO）"
+      },
+      {
+        "code": "AE",
+        "name": "アラブ首長国連邦",
+        "city": "ドバイ",
+        "lat": 25.2,
+        "lon": 55.27,
+        "count": null,
+        "note": "二国間の労働協定・覚書を締結（ILO）"
+      },
+      {
+        "code": "KW",
+        "name": "クウェート",
+        "city": "クウェート",
+        "lat": 29.37,
+        "lon": 47.98,
+        "count": null,
+        "note": "1980年代からの就労先。協定は交渉中（ILO, 2023）"
+      },
+      {
+        "code": "QA",
+        "name": "カタール",
+        "city": "ドーハ",
+        "lat": 25.29,
+        "lon": 51.53,
+        "count": null,
+        "note": "二国間の労働協定・覚書を締結（ILO）"
+      },
+      {
+        "code": "JO",
+        "name": "ヨルダン",
+        "city": "アンマン",
+        "lat": 31.95,
+        "lon": 35.93,
+        "count": null,
+        "note": "二国間の労働協定・覚書を締結（ILO）"
+      },
+      {
+        "code": "LB",
+        "name": "レバノン",
+        "city": "ベイルート",
+        "lat": 33.89,
+        "lon": 35.5,
+        "count": null,
+        "note": "1980年代からの就労先。協定を締結（ILO）"
+      }
+    ]
+  },
+  "benefits": {
+    "japan": [
+      "人手不足の緩和",
+      "若く意欲ある人材の確保",
+      "多様な人材による職場の活性化"
+    ],
+    "ethiopia": [
+      "技能と所得の向上",
+      "家族への送金",
+      "帰国後の産業への貢献（技能・経験の還元）"
+    ]
+  }
+}
