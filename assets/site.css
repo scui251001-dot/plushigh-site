@@ -643,4 +643,4 @@ a.bz:hover { border-color: var(--accent); }
 a.chat-fab { text-decoration: none; }
 
 /* current-page CTA: no underline through subtitle */
-.site-nav a.nav-cta[aria-current="page"] { text-decoration: none; box-shadow: inset 0 0 0 2px var(--ink); }
+.site-nav a.nav-cta[aria-current="page"], .site-nav a.nav-cta[aria-current="page"] * { text-decoration: none !important; box-shadow: none !important; }
