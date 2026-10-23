@@ -22,7 +22,7 @@
       msg.textContent = '送信しています…'; msg.className = 'form-msg';
       try {
         const SUBJ = { '/api/contact': 'お問い合わせ', '/api/consult': 'ご相談', '/api/requests': 'ご要望', '/api/talent': '人材育成のご相談' };
-        window.PH.mailto(SUBJ[form.dataset.endpoint] || 'お問い合わせ', body);
+        const how = await window.PH.send(SUBJ[form.dataset.endpoint] || 'お問い合わせ', body);
         form.reset();
         msg.textContent = '';
         if (done) {
@@ -30,7 +30,7 @@
           done.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
           const again = done.querySelector('[data-again]');
           if (again) again.onclick = () => { done.hidden = true; form.hidden = false; };
-        } else msg.textContent = 'メールアプリが開きます。そのまま送信してください。';
+        } else msg.textContent = how === 'sent' ? '送信しました。担当者よりご連絡いたします。' : 'メールアプリが開きます。そのまま送信してください。';
         form.dispatchEvent(new CustomEvent('submitted'));
       } catch (ex) {
         msg.textContent = ex.message; msg.className = 'form-msg err';

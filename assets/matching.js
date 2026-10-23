@@ -357,7 +357,7 @@ form.addEventListener('submit', async (e) => {
   btn.disabled = true;
   msg.textContent = '送信しています…'; msg.className = 'form-msg';
   try {
-    window.PH.mailto('ビジネスマッチングのお申込み', body);
+    await window.PH.send('ビジネスマッチングのお申込み', body);
     form.reset();
     form.hidden = true;
     msg.textContent = '';

@@ -62,11 +62,26 @@
     setTimeout(() => t.remove(), 2200);
   });
   // 静的ホスティング版：フォーム内容をメール（info@plushigh.co.jp）で送る
-  const MAIL_TO = 'k.sai@stitrade.com'; // 暫定（info@plushigh.co.jp 開設まで）
+  const MAIL_TO = 'info@plushigh.co.jp';
+  // フォーム直接送信（Web3Forms）。アクセスキーは公開してよい値。空ならメールアプリ方式に戻る
+  const FORM_KEY = '';
   const LABEL = { type:'お問い合わせの種類', category:'分野', side:'立場', company:'会社名', contact_name:'ご担当者', name:'お名前', email:'メールアドレス', phone:'電話番号', tel:'電話番号', country:'国', item:'品目・内容', message:'内容', body:'内容', detail:'詳細' };
   function mailto(subject, obj) {
     const lines = Object.entries(obj || {}).filter(([k, v]) => v !== '' && v != null && !['website','consent'].includes(k)).map(([k, v]) => `${LABEL[k] || k}: ${v}`);
     location.href = `mailto:${MAIL_TO}?subject=${encodeURIComponent('[plushigh.co.jp] ' + subject)}&body=${encodeURIComponent(lines.join('\n'))}`;
+  }
+
+  function lines(obj) {
+    return Object.entries(obj || {}).filter(([k, v]) => v !== '' && v != null && !['website','consent'].includes(k)).map(([k, v]) => `${LABEL[k] || k}: ${v}`);
+  }
+  async function send(subject, obj) {
+    if (!FORM_KEY) { mailto(subject, obj); return 'mailto'; }
+    const payload = { access_key: FORM_KEY, subject: '[plushigh.co.jp] ' + subject, from_name: 'plushigh.co.jp フォーム', botcheck: '', message: lines(obj).join('\n') };
+    if (obj && obj.email) payload.replyto = obj.email;
+    const r = await fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(payload) });
+    const d = await r.json().catch(() => ({}));
+    if (!r.ok || d.success === false) throw new Error('送信できませんでした。時間をおいて再度お試しいただくか、info@plushigh.co.jp までメールでご連絡ください。');
+    return 'sent';
   }
 
   // ハニーポット：隠し欄（.hp）に入力があればボットとみなし、送信処理を止める
@@ -92,5 +107,5 @@
     const d = await r.json();
     return Number(d.value) || 0;
   }
-  window.PH = { store, uuid, browserId, api, el, fmtDate, fmtDateTime, mailto, MAIL_TO, views };
+  window.PH = { store, uuid, browserId, api, el, fmtDate, fmtDateTime, mailto, send, MAIL_TO, views };
 })();
