@@ -22,3 +22,6 @@
 - `<form>` は必ず `method="post"`（JS が失敗してもメールアドレスが URL に載らないように）。
 - インライン `<script>` は書かない（CSP で動かない）。スクリプトは assets/ に置く。
 - claude.ai の預覧 artifact で表示が崩れる場合は、預覧用コピーからだけ CSP の meta を外してよい（本番ファイルからは外さない）。
+
+## トップページ
+- https://plushigh.co.jp/ を開くと最初にビジネス通信が出るよう、`index.html` は `tsushin.html` のコピー（Steven 2026-10-23）。`tsushin.html` を直したら `cp tsushin.html index.html` も行う。会社紹介は `home.html`。
