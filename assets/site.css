@@ -641,3 +641,6 @@ a.bz:hover { border-color: var(--accent); }
 /* 静的ホスティング版：サーバー機能が必要な部分を非表示 */
 .views, .reactions, .comments, #lot { display: none !important; }
 a.chat-fab { text-decoration: none; }
+
+/* current-page CTA: no underline through subtitle */
+.site-nav a.nav-cta[aria-current="page"] { text-decoration: none; box-shadow: inset 0 0 0 2px var(--ink); }
