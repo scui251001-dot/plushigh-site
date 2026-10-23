@@ -11,14 +11,10 @@
   (async () => {
     const last = Number(store.get(VIEW_KEY) || 0);
     try {
-      if (Date.now() - last > 30 * 60 * 1000) {
-        const d = await api('/api/view', { method: 'POST', body: { slug } });
-        store.set(VIEW_KEY, String(Date.now()));
-        showViews(d.views);
-      } else {
-        const d = await api(`/api/view?slug=${encodeURIComponent(slug)}`);
-        showViews(d.views);
-      }
+      const count = Date.now() - last > 30 * 60 * 1000;
+      const n = await window.PH.views(slug, count);
+      if (count) store.set(VIEW_KEY, String(Date.now()));
+      showViews(n);
     } catch { if (viewsEl) viewsEl.textContent = ''; }
   })();
 

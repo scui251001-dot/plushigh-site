@@ -24,7 +24,8 @@
     const meta = el('div', { class: 'meta' },
       el('span', { class: 'badge', text: latest.sample ? 'サンプル' : '最新号' }),
       latest.label ? el('span', { text: latest.label }) : latest.no ? el('span', { text: `第${latest.no}号` }) : null,
-      el('time', { datetime: latest.date, text: fmtDate(latest.date) }));
+      el('time', { datetime: latest.date, text: fmtDate(latest.date) }),
+      el('span', { class: 'vc', 'data-vslug': latest.slug }));
     if (latest.sample) meta.firstChild.className = 'badge sample';
     latestBox.replaceChildren(
       el('a', { class: 'latest', href: `issues/${latest.slug}.html` },
@@ -41,7 +42,15 @@
     archive.replaceChildren(...rest.map((i) =>
       el('li', null, el('a', { href: `issues/${i.slug}.html` },
         el('time', { datetime: i.date, text: fmtDate(i.date) }),
-        el('span', { class: 't' }, i.sample && !/サンプル/.test(i.title) ? '【サンプル】' : '', i.title)))));
+        el('span', { class: 't' }, i.sample && !/サンプル/.test(i.title) ? '【サンプル】' : '', i.title),
+        el('span', { class: 'vc', 'data-vslug': i.slug })))));
+    fillViews();
   }
-  load();
+  function fillViews() {
+    if (!window.PH.views) return;
+    document.querySelectorAll('[data-vslug]').forEach(async (sp) => {
+      try { const n = await window.PH.views(sp.dataset.vslug, false); sp.textContent = `閲覧 ${n.toLocaleString('ja-JP')}`; } catch { sp.textContent = ''; }
+    });
+  }
+  load().then(fillViews);
 })();

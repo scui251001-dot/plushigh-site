@@ -639,7 +639,8 @@ a.bz:hover { border-color: var(--accent); }
 [hidden]{display:none!important}
 
 /* 静的ホスティング版：サーバー機能が必要な部分を非表示 */
-.views, .reactions, .comments, #lot { display: none !important; }
+.reactions, .comments, #lot { display: none !important; }
+.vc { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; margin-left: auto; }
 a.chat-fab { text-decoration: none; }
 
 /* current-page CTA: no underline through subtitle */

@@ -81,5 +81,16 @@
   if (/(^|\.)plushigh\.co\.jp$/.test(location.hostname) && window.top !== window.self) {
     try { window.top.location = window.self.location.href; } catch (_) { document.documentElement.style.display = 'none'; }
   }
-  window.PH = { store, uuid, browserId, api, el, fmtDate, fmtDateTime, mailto, MAIL_TO };
+
+  // 閲覧数（静的サイト用：外部カウンター abacus.jasoncameron.dev）
+  const VIEW_NS = 'plushigh-co-jp';
+  async function views(slug, count) {
+    const key = String(slug).replace(/[^A-Za-z0-9_-]/g, '-');
+    const r = await fetch(`https://abacus.jasoncameron.dev/${count ? 'hit' : 'get'}/${VIEW_NS}/${key}`, { credentials: 'omit' });
+    if (r.status === 404 || r.status === 400) return 0;
+    if (!r.ok) throw new Error('views ' + r.status);
+    const d = await r.json();
+    return Number(d.value) || 0;
+  }
+  window.PH = { store, uuid, browserId, api, el, fmtDate, fmtDateTime, mailto, MAIL_TO, views };
 })();
