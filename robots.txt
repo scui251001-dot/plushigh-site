@@ -4,3 +4,5 @@ Disallow: /admin.html
 Disallow: /scan
 Disallow: /scan.html
 Disallow: /api/
+
+Sitemap: https://plushigh.co.jp/sitemap.xml

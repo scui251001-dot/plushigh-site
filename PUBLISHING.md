@@ -25,3 +25,8 @@
 
 ## トップページ
 - https://plushigh.co.jp/ を開くと最初にビジネス通信が出るよう、`index.html` は `tsushin.html` のコピー（Steven 2026-10-23）。`tsushin.html` を直したら `cp tsushin.html index.html` も行う。会社紹介は `home.html`。
+
+## SEO（新しい号ごとに）
+- 新しい号の `<head>` に NewsArticle の `<script type="application/ld+json">`（直近の号からコピーして headline・description・datePublished・mainEntityOfPage を差し替え）。
+- `sitemap.xml` に `<url><loc>https://plushigh.co.jp/issues/<slug></loc>…</url>` を追加し、トップ（/）の lastmod を当日に更新。
+- title は「<号名>｜東アフリカ・中東ビジネス通信｜株式会社プラスハイ」、description は今週の結論を 120 字前後で。
