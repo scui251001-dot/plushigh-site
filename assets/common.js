@@ -64,7 +64,7 @@
   // 静的ホスティング版：フォーム内容をメール（info@plushigh.co.jp）で送る
   const MAIL_TO = 'info@plushigh.co.jp';
   // フォーム直接送信（Web3Forms）。アクセスキーは公開してよい値。空ならメールアプリ方式に戻る
-  const FORM_KEY = '';
+  const FORM_KEY = 'fd4b0736-2764-424b-a1be-c10f2d2d5d71';
   const LABEL = { type:'お問い合わせの種類', category:'分野', side:'立場', company:'会社名', contact_name:'ご担当者', name:'お名前', email:'メールアドレス', phone:'電話番号', tel:'電話番号', country:'国', item:'品目・内容', message:'内容', body:'内容', detail:'詳細' };
   function mailto(subject, obj) {
     const lines = Object.entries(obj || {}).filter(([k, v]) => v !== '' && v != null && !['website','consent'].includes(k)).map(([k, v]) => `${LABEL[k] || k}: ${v}`);
